@@ -12,9 +12,9 @@ Laravel with React.js/Vue.js/Livewire or Blade or API-only?
 
 Based on that choice, you need to run `laravel new` and choose the **starter kit** (or `None`) accordingly.
 
-In the installation wizard, choose to install Laravel Boost and enagle skills/guidelines.
+In the installation wizard, choose to install [Laravel Boost](https://github.com/laravel/boost) and enable skills/guidelines.
 
-After that, put the initial job description as Markdown file in `docs/project-description.md`. The rest of the workflow is based on that filename.
+After we have this new project folder, put the initial job description as Markdown file in `docs/project-description.md`. The rest of the workflow is based on that filename.
 
 Initialize Git repository and commit this initial skeleton.
 
