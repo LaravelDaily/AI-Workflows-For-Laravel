@@ -20,14 +20,54 @@ Initialize Git repository and commit this initial skeleton.
 
 ---
 
-## 2. Choose Adminpanel and Other Packages
+## 2. Filament Adminpanel
 
-Quite often, Laravel projects need admin panel. My personal favorite is [Filament](https://filamentphp.com/), so I would install it right away, so that Laravel Boost would get its guidelines. After installing Filament, re-run `php artisan boost:install`.
+If your project needs admin panel, install it right away, as it's a fundamental architectural package. My personal favorite is [Filament](https://filamentphp.com/), so I would install it now, so that Laravel Boost would get its guidelines. After installing Filament, re-run `php artisan boost:install`.
 
-Next, think about other fundamental Laravel packages that you may want to install.
+Add Filament as a choice into `docs/project-description.md`, in the tech-stack choice section.
 
-You may consult AI agent with [this prompt](./prompts/choose-laravel-packages.md).
+---
+
+## 3. User Stories
+
+Run [this user stories prompt](./prompts/prompt-user-stories.md) in Claude Code or other AI agent of choice. It should ask you questions to clarify the project details.
+
+As a result, you should get a new file `docs/user-stories.md`. Review it with AI and/or manually before proceeding.
+
+---
+
+## 4. Third-Party Packages
+
+Next, think about other Laravel packages that you may want to install, like `spatie/laravel-medialibrary` or similar.
+
+You may consult AI agent with [this prompt](./prompts/prompt-choose-laravel-packages.md).
 
 Install the packages you have chosen.
 
+Add those packages to the list of tech-stack in `docs/project-description.md`.
+
 ---
+
+## 5. User Stories to Project Phases. 
+
+Run [this project phases prompt](./prompts/prompt-project-phases.md) in AI agent. As a result, you should get a new file `docs/project-phases.md`. Review it with AI and/or manually.
+
+---
+
+## 6. Custom AI Guidelines, Docs, MCPs
+
+If you want to add custom guidelines for Laravel/Filament or other packages, put them now into `.ai/guidelines` folder as Markdown files. Read more in the [docs of Laravel Boost](https://laravel.com/docs/12.x/boost#adding-custom-ai-guidelines).
+
+You can use my own guidelines for [Laravel](./guidelines/laraveldaily-laravel.md) and [Filament](./guidelines/laraveldaily-filament.md). The most important parts are to force AI agent to generate/run Pest tests, and to use [Context7](https://github.com/upstash/context7) as a fallback for docs in case of Laravel Boost failure (*that happens rarely*).
+
+Run `php artisan boost:install` again to see if any packages have published their AI guidelines/skills for Laravel Boost.
+
+Also here, add any MCP servers you want to use. I personally don't use anything except for Context7, mentioned above.
+
+---
+
+## 7. Start Prompting to Write Code
+
+From here, you should be able to prompt something like `Work on Phase 1 of @docs/project-phases.md`, same for Phase 2, 3, and so on, as the descriptions of the phases are detailed enough already.
+
+But, of course, if you see some details missing, you can course correct along the way.
