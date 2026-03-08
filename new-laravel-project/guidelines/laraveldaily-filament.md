@@ -8,4 +8,4 @@
 
 ## Auto-Run FilaCheck
 
-- If package `laraveldaily/filacheck` or `laraveldaily/filacheck-pro` is installed, and if you have modified any Filament files, you must run `vendor/bin/filacheck --fix` before running Pest tests, to ensure there is no deprecated Filament code.
+- If package `laraveldaily/filacheck` or `laraveldaily/filacheck-pro` is installed, and if you have created/modified any files in `app/Filament` folder, you must run `vendor/bin/filacheck --fix` before running Pest tests, to ensure there is no deprecated Filament code.

@@ -56,7 +56,7 @@ For Filament projects, I use and recommend my own package [FilaCheck](https://fi
 
 ## 5. Custom AI Guidelines and MCPs
 
-If you want to add custom guidelines for Laravel/Filament or other packages, put them now into `.ai/guidelines` folder as Markdown files. Read more in the [docs of Laravel Boost](https://laravel.com/docs/12.x/boost#adding-custom-ai-guidelines).
+If you want to add custom guidelines for Laravel/Filament or other packages, put them now into `.ai/guidelines` folder as Markdown files and re-run `php artisan boost:install`. Read more in the [docs of Laravel Boost](https://laravel.com/docs/12.x/boost#adding-custom-ai-guidelines).
 
 You can use my own guidelines for [Laravel](./guidelines/laraveldaily-laravel.md) and [Filament](./guidelines/laraveldaily-filament.md). The most important parts are to force AI agent to generate/run Pest tests, and to use [Context7](https://github.com/upstash/context7) as a fallback for docs in case of Laravel Boost failure (*that happens rarely*).
 
