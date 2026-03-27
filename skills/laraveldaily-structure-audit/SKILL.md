@@ -1,5 +1,5 @@
 ---
-name: laravel-structure-audit
+name: laraveldaily-structure-audit
 description: This skill should be used when the user asks to "audit Laravel project structure", "review project architecture", "check code organization", "find over-engineering", "find fat controllers", "structure review", or wants to analyze a Laravel project for structural improvements. Scans all PHP source files and reports findings with actionable suggestions.
 ---
 
